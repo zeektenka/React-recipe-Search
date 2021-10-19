@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid orange;
+}
+.header h1 {
+  padding: 0;
+  margin: 10px;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.header input {
+  width: 300px;
+  padding: 0.4rem 0.5rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.header button {
+  padding: 0.4rem 0.2rem;
+}
+
+.items-cont {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto;
+  background-color: azure;
+}
+
+.tiles {
+  max-width: 500px;
+  width: 50%;
+  background-color: whitesmoke;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tiles img {
+  width: inherit;
+}
+
+.tiles h3 {
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: orange;
+  margin: 0;
+  padding: 0;
+}
