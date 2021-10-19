@@ -8,6 +8,7 @@ body {
   margin: 0;
   text-align: center;
   border-bottom: 2px solid orange;
+  margin-bottom: 1rem;
 }
 .header h1 {
   padding: 0;
@@ -28,15 +29,15 @@ body {
 }
 
 .items-cont {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: auto;
-  background-color: azure;
+  margin: auto;
+  min-width: 300px;
 }
 
 .tiles {
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
-  width: 50%;
+  width: 70%;
   background-color: whitesmoke;
   margin: auto;
   margin-bottom: 1rem;
@@ -45,9 +46,7 @@ body {
   box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
-.tiles img {
-  width: inherit;
-}
+
 
 .tiles h3 {
   font-weight: 100;
@@ -56,3 +55,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.tiles h5 {
+  color: black;
+  margin:  0 3px;
+  padding: 0;
+}
+
+.tiles a{
+  text-decoration: none;
+}
+
+

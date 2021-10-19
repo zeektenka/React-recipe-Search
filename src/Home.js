@@ -18,31 +18,30 @@ function Home() {
     const data = await res.json();
 
     let listOfRecipes = data.meals;
-    //console.log(data.meals)
 
     iol = listOfRecipes.map((item) => {
       return (
         <RecipeTile
+          key={item.idMeal}
           category={item.strCategory}
           image={item.strMealThumb}
           name={item.strMeal}
+          source={item.strYoutube}
         />
       );
     });
     setLoading(false);
-    console.log(iol);
   }
 
   function handleInput(e) {
-    //console.log(e.target.value)
     setsearchVal(e.target.value);
   }
 
   return (
     <div>
       <Header func1={handleInput} func2={() => getData(searcVal)} />
-      <div className='items-cont'>
-        {loading ? <p style={{display:'none'}}></p> : <div>{iol}</div>}
+      <div className="items-cont">
+        {loading ? <p style={{ display: 'none' }}></p> : <div>{iol}</div>}
       </div>
     </div>
   );
